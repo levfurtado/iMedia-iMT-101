@@ -1,3 +1,4 @@
+
 /* CSS Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -16,6 +17,10 @@ html, body{
       font-size: 15px;
 }
 
+
+
+
+>>>>>>> 575856872eec084a3fc30b15e76cf219df32c085
 .box-generic {
 	border: 1px solid black;
 	width: 90%;
