@@ -1,3 +1,25 @@
+
+/* CSS Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ul{ list-style:none; list-style-position:outside;}
+a {  outline: none;}
+
+/* Tell old browsers how to handle HTML5 elements */
+hr, header, footer, aside, nav, article {display: block;}
+
+html, body{
+
+      background: #DFDFD0;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+}
+
+
+
+
 .box-generic {
 	border: 1px solid black;
 	width: 90%;
