@@ -11,7 +11,13 @@ div {
 	width: 90%;
 	padding: 5px;
 }
-
+li {
+	font-weight: bold;
+}
+li > p {
+	font-weight: normal;
+	padding-left: 10px;
+}
 #picture {
 	
 	width: 368px;
