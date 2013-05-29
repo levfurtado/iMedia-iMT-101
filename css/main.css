@@ -12,7 +12,7 @@ div {
 	
 	width: 368px;
 	height: 311px;
-	background: url('http://192.168.1.113:8080/images/412234a8758511e1abb01231381b65e3_6.jpg') no-repeat;
+	background: url('/images/412234a8758511e1abb01231381b65e3_6.jpg') no-repeat;
 	float: center;
 	
 }
