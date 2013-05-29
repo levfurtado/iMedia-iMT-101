@@ -24,12 +24,10 @@ html, body{
 }
 #picture {
 	display: block;
-	width: 168px;
-	height: 111px;
+	width: 368px;
+	height: 211px;
 	background: url('https://sphotos-a.xx.fbcdn.net/hphotos-ash4/484235_10200278398459216_1965497981_n.jpg') no-repeat;
-	float: left;
+	float: center;
 	margin: 55px 0 0 -120px;
-	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
-    box-shadow: 3px 3px 3px #7C7C7C;
 	
 }
