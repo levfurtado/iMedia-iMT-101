@@ -22,4 +22,11 @@ html, body{
 	border: 1px solid black;
 	width: 90%;
 }
-
+#picture {
+	
+	width: 368px;
+	height: 311px;
+	background: url('http://192.168.1.113:8080/images/484235_10200278398459216_1965497981_n.jpg') no-repeat;
+	float: center;
+	
+}
