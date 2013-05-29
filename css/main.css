@@ -23,11 +23,10 @@ html, body{
 	width: 90%;
 }
 #picture {
-	display: block;
+	
 	width: 368px;
 	height: 211px;
-	background: url('https://sphotos-a.xx.fbcdn.net/hphotos-ash4/484235_10200278398459216_1965497981_n.jpg') no-repeat;
+	background: url('images/484235_10200278398459216_1965497981_n.jpg') no-repeat;
 	float: center;
-	margin: 55px 0 0 -120px;
 	
 }
