@@ -8,13 +8,31 @@ div {
 
 .box-generic {
 	border: 1px solid black;
-	width: 90%;
+	width: 33%;
+        height: 200px;
 	padding: 5px;
+	overflow: hidden;
 }
+.box-generic > 
 li {
 	font-weight: bold;
 }
 li > p {
 	font-weight: normal;
 	padding-left: 10px;
+}
+.wrap  {
+	border: 1px solid black;	
+	height: auto;
+	      
+}
+.wrap > div {
+	float: left;
+	margin: 5px;
+	
+}
+
+.wrap > .box-generic{
+        
+	padding: 1%;
 }
