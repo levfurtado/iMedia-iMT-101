@@ -1,54 +1,61 @@
+<!DOCTYPE HTML>
+<html>
 <head>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<link rel="stylesheet" href="css/main.css" type="text/css">
+<title>iMedia Hackathon</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<html>
-
-iMedia Hackathon
-<h1>iMedia Hackathon</h1>
-
-
-
-<h2>hello from edossantos</h2>
-
-
-<h2>Wayne Added this line </h2>
-Devondegrazia
-
-<h1>DevonDeGrazia</h1>
-
-
-<a href http://git-scm.com/docs> </a>
-
-
-<a href= "http://git-scm.com/docs"></a>
-
-<h2>DevonDeGrazia</h2>
-<a href= "http://git-scm.com/docs">GitHub Help </a>
-
-</html>
-
-
-Tpeirce
-
-<h1>Hello iMedia class!</h1>
-<html>
-<h2>Hello iMedia class!</h2>
-<p>ldion</p>
-<h2>Hello by Edmilson</h2>
-<div id="andrew" class="box-generic"></div>
 <script type="text/javascript">
 $.get("andrew.html",
 		function(data) {
-		$('#andrew').html(data);
+			$('#andrew').html(data);
 		});
+
+
+$.get("WJD-001.html",
+                function(data) {
+                        $('#WJD-001').html(data);
+                });
+$.get("devondegrazia.html",
+                function(data) {
+                        $('#devondegrazia').html(data);
+                });
+
+
+$.get("edossantos.html",
+                function(data) {
+                        $('#edossantos').html(data);
+                });
+
+$.get("gh-pages.html",
+                function(data) {
+                        $('#gh-pages').html(data);
+                });
+
+
+$.get("ldion.html",
+                function(data) {
+                        $('#ldion').html(data);
+                });
+$.get("tp-bio.html",
+                function(data) {
+                        $('#TP-BIO').html(data);
+                });
+$.get("levfurtado.html",
+                function(data) {
+                        $('#levfurtado').html(data);
+                });
 </script>
-</html>
-<html>
 <body>
-<ul>
-<li>home</li>
-<li>help</li>
-</ul>
+<div id="andrew" class="box-generic"></div>
+<div id="edossantos" class ="box-generic"></div>
+<div id="devondegrazia" class ="box-generic"></div>
+<div id="gh-pages" class ="box-generic"></div>
+<div id="ldion" class ="box-generic"></div>
+<div id="WJD-001" class ="box-generic"></div>
+<div id="TP-BIO" class ="box-generic"></div>
+<div id="levfurtado" class ="box-generic"></div>
 </body>
 </html>
+
+
