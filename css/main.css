@@ -27,12 +27,16 @@ li > p {
 	font-weight: normal;
 	padding-left: 10px;
 }
-.wrap {
+#wrap {
 	width: 950px;
+	border: 1px solid black;
 }
-.wrap:before {
-	clear: auto both;
+#wrap:before {
+	clear: both;
 }
-.wrap:after {
-	clear: auto both;
+#wrap:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	clear: both;
 }
