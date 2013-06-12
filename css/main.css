@@ -21,18 +21,29 @@ li > p {
 	font-weight: normal;
 	padding-left: 10px;
 }
-.wrap  {
+.wrapper  {
 	border: 1px solid black;	
 	height: auto;
 	      
 }
-.wrap > div {
+.wrapper > div {
 	float: left;
-	margin: 5px;
 	
 }
 
-.wrap > .box-generic{
-        
-	padding: 1%;
+.wrapper > .box-generic{
+
+	padding:0 5% 0 0;
+	margin: 1% -8% 1% 10%; 	
+
+
 }
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
