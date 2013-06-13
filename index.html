@@ -58,12 +58,15 @@ $.get("levfurtado.html",
 <div id="levfurtado" class ="box-generic"></div>
 </div>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script>$('.box-generic').on("click", function(event){
+<script>
+	$('body').bind('click',function(event) {
+	if($(event.target).closest('.box-generic').length == 0) {
+	$('.box-generic').removeClass('active');
+	}
+	});
+	$('.box-generic').on("click", function(event){
 	$('.box-generic').removeClass('active');
 	$(this).addClass('active');
-	});
-	$(".box-generic").mouseout(function(event){
-	$(".box-generic").removeClass('active');
 	});
 </script>
 </body>
