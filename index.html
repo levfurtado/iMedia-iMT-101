@@ -59,7 +59,7 @@ $.get("levfurtado.html",
 </div>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script>
-	$('body').bind('click',function(event) {
+	$('html').bind('click',function(event) {
 	if($(event.target).closest('.box-generic').length == 0) {
 	$('.box-generic').removeClass('active');
 	}
