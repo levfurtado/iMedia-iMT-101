@@ -16,14 +16,22 @@ padding-left: 10px;
 {
 border: 1px solid black;
 padding:5px;
-overflow: scroll;
-width: 40%;
+width: 47%;
+overflow:scroll;
+height: 150px;
+float: left;
+}
+.newbox
+{
+border: 1px solid black;
+padding:5px;
+width: 47%;
+overflow:scroll;
 height: 400px;
 float: left;
 }
 .main-wrap
 {
-border: 1px solid black;
 margin: 0px auto;
 width: 80%;
 }
@@ -35,4 +43,3 @@ width: 80%;
 }
 .clearfix {
   display: inline-block;
-  border: 1px solid black;

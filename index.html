@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML.>
 <html>
 <head>
 <title>iMedia Hackathon</title>
@@ -45,6 +45,17 @@ $.get("levfurtado.html",
                 function(data) {
                         $('#levfurtado').html(data);
                 });
+console.log($('.box-generic'));
+$(document).ready(function() {
+
+$(".box-generic").on("click", function() {
+$(this).addClass("newbox");
+});
+$(".newbox").on("click", function() {
+$(this).addClass("box-generic");
+});
+
+});
 </script>
 <body>
 <div class="main-wrap clearfix">
