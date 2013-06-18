@@ -51,8 +51,8 @@ $(document).ready(function() {
 $(".box-generic").on("click", function() {
 $(this).addClass("newbox");
 });
-$(".newbox").on("click", function() {
-$(this).addClass("box-generic");
+$(".box-generic .newbox").on("click", function() {
+$(this).removeClass(".newbox");
 });
 
 });
