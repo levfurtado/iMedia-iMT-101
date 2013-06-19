@@ -10,25 +10,15 @@ div {
 	border: 1px solid black;
 	width: 450px;
 	height: 150px;
+	float: left;
 	overflow: hidden;
 	padding: 5px;
 	margin: 5px;
 }
 
-.box-generic.left {
-	float: left;
-	margin-right: 9px;
-}
-
-.box-generic.right {
-	float: right;
-	margin-left: 0px;
-}
-
-
 .box-generic.active {
 	height: 322px;
-/*	overflow: auto;*/
+	overflow: auto;
 }
 
 li {
@@ -38,14 +28,30 @@ li > p {
 	font-weight: normal;
 	padding-left: 10px;
 }
+
+#leftside {
+	float: left;
+}
+
+#rightside {
+	float: right;
+}
+
+#leftside, #rightside {
+	width: 470px;
+/*	border: 1px solid black;*/
+}
+
 #wrap {
 	width: 950px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
-#wrap:before {
+
+#wrap:before, #leftside:before, #rightside:before {
 	clear: both;
 }
-#wrap:after {
+
+#wrap:after, #leftside:after, #rightside:after {
 	content: "";
 	display: block;
 	visibility: hidden;
