@@ -48,22 +48,31 @@ $.get("levfurtado.html",
 </script>
 <body>
 <div class="wrapper clearfix">
-<div id="andrew" class="box-generic"></div>
-<div id="edossantos" class ="box-generic">
-<div class="main-nav" id="show-nav">
-                        <a href="#">More</a>
-                </div>
-                 <div class="main-nav" id="close-nav">
-                        <a href="#">Less</a>
+<div id="andrew" class="box-generic left"></div>
+<div id="edossantos" class ="box-generic left"></div>
+<div id="devondegrazia" class ="box-generic left"></div>
+<div id="gh-pages" class ="box-generic left"></div>
+<div id="ldion" class ="box-generic right"></div>
+<div id="WJD-001" class ="box-generic right"></div>
+<div id="TP-BIO" class ="box-generic right"></div>
+<div id="levfurtado" class ="box-generic right"></div>
 </div>
-</div>
-<div id="devondegrazia" class ="box-generic"></div>
-<div id="gh-pages" class ="box-generic"></div>
-<div id="ldion" class ="box-generic"></div>
-<div id="WJD-001" class ="box-generic"></div>
-<div id="TP-BIO" class ="box-generic"></div>
-<div id="levfurtado" class ="box-generic"></div>
-</div>
+<script>
+$(".box-generic").on('click', function(){
+$(this, "#").height("auto").show("slow")
+});
+$(".box-generic").mouseout(function(){
+$(this, "#").height(150).show("slow")
+});
+
+
+
+
+
+</script>
+
+
+
 </body>
 </html>
 
