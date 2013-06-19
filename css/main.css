@@ -6,13 +6,19 @@ div {
 }
 .box-generic {
 	border: 1px solid black;
-	width: 90%;
+	width: 33%;
+        height: 200px;
 	padding: 5px;
+<<<<<<< HEAD
         float: left;
         overflow: scroll;
        width: 40%;
        height: 400px;
+=======
+	overflow: hidden;
+>>>>>>> a952a70e3d8abc1a8d3eb238bd92ebabb5c213e6
 }
+.box-generic > 
 li {
 	font-weight: bold;
 }
@@ -20,6 +26,7 @@ li > p {
 	font-weight: normal;
 	padding-left: 10px;
 }
+<<<<<<< HEAD
 
 #main-wrap
 {
@@ -41,4 +48,20 @@ margin-right:10px;
 #TP-BIO
 {
 margin-right:10px;
+=======
+.wrap  {
+	border: 1px solid black;	
+	height: auto;
+	      
+}
+.wrap > div {
+	float: left;
+	margin: 5px;
+	
+}
+
+.wrap > .box-generic{
+        
+	padding: 1%;
+>>>>>>> a952a70e3d8abc1a8d3eb238bd92ebabb5c213e6
 }

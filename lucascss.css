@@ -20,6 +20,7 @@ width: 47%;
 overflow:scroll;
 height: 150px;
 float: left;
+margin: 5px;
 }
 .newbox
 {
@@ -43,3 +44,16 @@ width: 80%;
 }
 .clearfix {
   display: inline-block;
+}
+.edossantos {
+float: right;
+}
+.gh-pages {
+float: right;
+}
+.WJD-001 {
+float: right;
+}
+levfurtado {
+float: right;
+}
