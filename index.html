@@ -6,41 +6,16 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <script type="text/javascript">
-$.get("andrew.html",
+var files=["andrew.html","WJD-001.html","devondegrazia.html","edossantos.html","gh-pages.html","ldion.html","tp-bio.html","levfurtado.html"];
+for (var i = 0; i < files.length; i++) {
+	var name=files[i];
+	var sname="#"+name.substr(0,name.indexOf("."));
+	console.log(sname);
+	$.get(name,
 		function(data) {
-			$('#andrew').html(data);
+			$(sname).html(data);
 		});
-
-
-$.get("WJD-001.html",
-                function(data) {
-                        $('#WJD-001').html(data);
-                });
-$.get("devondegrazia.html",
-                function(data) {
-                        $('#devondegrazia').html(data);
-                });
-
-
-$.get("edossantos.html",
-                function(data) {
-                        $('#edossantos').html(data);
-                });
-
-$.get("gh-pages.html",
-                function(data) {
-                        $('#gh-pages').html(data);
-                });
-
-
-$.get("ldion.html",
-                function(data) {
-                        $('#ldion').html(data);
-                });
-$.get("tp-bio.html",
-                function(data) {
-                        $('#TP-BIO').html(data);
-                });
+}
 $.get("levfurtado.html",
                 function(data) {
                         $('#levfurtado').html(data);
