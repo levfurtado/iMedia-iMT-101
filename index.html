@@ -7,19 +7,42 @@
 </head>
 <script type="text/javascript">
 var files=["andrew.html","WJD-001.html","devondegrazia.html","edossantos.html","gh-pages.html","ldion.html","tp-bio.html","levfurtado.html"];
+var name;
+var sname;
 for (var i = 0; i < files.length; i++) {
-	var name=files[i];
-	var sname="#"+name.substr(0,name.indexOf("."));
-	console.log(sname);
+	name = files[i];
 	$.get(name,
 		function(data) {
+			name = this.url;
+			sname="#"+name.substr(0,name.indexOf("."));
 			$(sname).html(data);
 		});
 }
-$.get("levfurtado.html",
-                function(data) {
-                        $('#levfurtado').html(data);
-                });
+for (var j = 0; j < files.length; j++) {
+	name = files[j];
+	function print() {
+		console.log(name.substr(0,name.indexOf(".")));
+	};
+	print();
+}
+
+console.log("Starting closure/scope example");
+var wrong = [];
+var right = [];
+for (var j = 0; j < 3; j++) {
+	wrong[j] = function() {
+		console.log("wrong["+j+"]");
+	};
+	right[j] = (function(index) {
+		console.log("right["+index+"]");
+	})(j);
+}
+for (var k = 0; k < 3; k++) {
+	wrong[k]();
+	right[k]();
+}
+console.log("End closure/scope example");
+
 </script>
 <body>
 <div id="wrap">
