@@ -6,52 +6,26 @@
 <link rel="stylesheet" type="text/css" href="lucascss.css">
 </head>
 <script type="text/javascript">
-$.get("andrew.html",
+$(document).ready(function() {
+var names = ["andrew.html", "devondegrazia.html", "edossantos.html", "ldion.html", "TP-BIO.html", "levfurtado.html", "WJD-001.html", "gh-pages.html"];
+function files(names) { 
+   for(i=0; i<names.length; i++) { 
+     x=names[i]; 
+     console.log(x);
+     print $.get(x,
 		function(data) {
-			$('#andrew').html(data);
+			$('#'+x.substring(0,x.indexOf("."))).html(data);
 		});
-
-
-$.get("WJD-001.html",
-                function(data) {
-                        $('#WJD-001').html(data);
-                });
-$.get("devondegrazia.html",
-                function(data) {
-                        $('#devondegrazia').html(data);
-                });
-
-
-$.get("edossantos.html",
-                function(data) {
-                        $('#edossantos').html(data);
-                });
-
-$.get("gh-pages.html",
-                function(data) {
-                        $('#gh-pages').html(data);
-                });
-
-
-$.get("ldion.html",
-                function(data) {
-                        $('#ldion').html(data);
-                });
-$.get("tp-bio.html",
-                function(data) {
-                        $('#TP-BIO').html(data);
-                });
-$.get("levfurtado.html",
-                function(data) {
-                        $('#levfurtado').html(data);
-                });
+ }
+};
+files(names);});
 console.log($('.box-generic'));
 $(document).ready(function() {
 
 $(".box-generic").on("click", function() {
 $(this).addClass("newbox");
 });
-$(".box-generic .newbox").on("click", function() {
+$(".newbox").on("click", function() {
 $(this).removeClass("newbox");
 });
 });
