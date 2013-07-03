@@ -1,67 +1,28 @@
-body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-div {
-	margin: auto;
-}
-.box-generic {
-	border: 1px solid black;
-	width: 33%;
-        height: 200px;
-	padding: 5px;
-<<<<<<< HEAD
-        float: left;
-        overflow: scroll;
-       width: 40%;
-       height: 400px;
-=======
-	overflow: hidden;
->>>>>>> a952a70e3d8abc1a8d3eb238bd92ebabb5c213e6
-}
-.box-generic > 
-li {
-	font-weight: bold;
-}
-li > p {
-	font-weight: normal;
-	padding-left: 10px;
-}
-<<<<<<< HEAD
-
-#main-wrap
+.span2
 {
-padding: 5px;
+background: blue;
+height:200px;
+border-radius:5px;
+color: white;
 }
-#andrew
+.span10
 {
-margin-right:10px;
+background: #660066;
+height:200px;
+border-radius:5px;
+color: white;
 }
-#devondegrazia
+.wrap
 {
-margin-right:10px;
+margin:10px;
+padding:10px;
+border: 1px solid black;
+border-radius: 10px;
+display:block;
 }
-
-#ldion
-{
-margin-right:10px;
-}
-#TP-BIO
-{
-margin-right:10px;
-=======
-.wrap  {
-	border: 1px solid black;	
-	height: auto;
-	      
-}
-.wrap > div {
-	float: left;
-	margin: 5px;
-	
-}
-
-.wrap > .box-generic{
-        
-	padding: 1%;
->>>>>>> a952a70e3d8abc1a8d3eb238bd92ebabb5c213e6
+.wrap:after {
+	clear: both;
+	display: block;
+	content: " ";
+	height: 0px;
 }
